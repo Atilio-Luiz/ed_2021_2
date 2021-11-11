@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[portuguese]{babel}
+\usepackage{enumerate}
+\usepackage{fullpage}
+\usepackage{color}
+
+% Add the packages
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\makeatletter
+\renewcommand{\ALG@name}{Algoritmo}
+\renewcommand{\listalgorithmname}{List of \ALG@name s}
+\makeatother
+
+\begin{document}
+
+\makebox[2\width][l]{Universidade Federal do Ceará - Campus Quixadá}
+
+\makebox[2\width][l]{QXD0010 – Estrutura de Dados -- Turma 03A -- 2021.2}
+
+\makebox[2\width][l]{Prof.~Atílio Gomes}
+
+\bigskip 
+
+\bigskip 
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+\Large Noções de Análise de Algoritmos}}}
+\end{center}
+
+
+\begin{questions}
+
+\question[2.5] Para cada uma das afirmações abaixo, prove se é verdadeiro ou falso,  justificando formalmente (usando definições, manipulações algébricas e implicações se for preciso). \textbf{Atenção:} Está proibido usar limites para resolver esta questão.
+\begin{enumerate}[(a)]
+\item $10n^2 + 200n + 500/n = O(n^2)$
+\item $\lg(100n^3 + 200n+300)^2 = O(\lg n)$
+\item $2n^2 - 20n - 50 = \Omega(2n)$ 
+\item Seja $C(n,k)$ o número de combinações de $n$ objetos tomados $k$ a $k$. É verdade que $C(n,2) = O(n^2)$? É verdade que $C(n,3) = O(n^3)$?
+\end{enumerate}
+
+\question[2.5]
+Determine a complexidade de pior caso do algoritmo a seguir:
+
+
+\begin{algorithm}
+\caption{Função F}
+\label{FuncF}
+\algrenewcommand\algorithmicprocedure{\textbf{Função}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\begin{algorithmic}[1]
+\Procedure{F}{int L[ ], int n}
+    \State $s \gets 0$ 
+    \For {$i \gets 0$ \textbf{até} $n-2$}
+        \For {$j \gets i+1$ \textbf{até} $n-1$}
+            \If {$L[i] > L[j]$}
+            \State $s \gets s+1$
+            \EndIf
+        \EndFor
+	\EndFor
+	\State \textbf{retorne} $s$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\question[2.5] Faça um algoritmo que verifique se os elementos de um vetor estão ordenados em ordem crescente. Qual a complexidade de pior caso e melhor caso do seu algoritmo? Prove que suas respostas estão corretas. \textbf{Atenção:} Note que eu não estou pedindo para ordenar o vetor.
+
+
+
+\question[2.5] A sequencia de Fibonacci é uma sequência de elementos $f_0,f_1,\ldots,f_n$, 
+definida do seguinte modo:
+\[ f_j =
+  \begin{cases}
+    j,       & \quad \text{se } 0\leq n\leq 1;\\
+    f_{j-1} + f_{j-2},  & \quad \text{se } j > 1.
+  \end{cases}
+\]
+Elaborar um algoritmo iterativo (não recursivo), para determinar o elemento $f_n$ da sequência, cuja complexidade seja linear em $n$ e prove este fato.
+
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\question[1] \textbf{(Bônus)} Considere a seguinte generalização do problema Torre de Hanói. O problema 
+agora consiste em $n$ discos de tamanhos distintos e quatro pinos, respectivamente, 
+o de origem, o de destino e dois pinos de trabalho (auxiliares). De resto, o problema 
+é como no caso de três pinos. Isto é, de início, os discos se encontram todos no 
+pino de origem, em ordem decrescente de tamanho, de baixo para cima. O objetivo é empilhar
+todos os discos no pino-destino, satisfazendo às condições:
+\begin{enumerate}[(i)]
+ \item apenas um disco pode ser movido de cada vez;
+ \item qualquer disco não pode ser jamais colocado sobre outro de tamanho menor.
+\end{enumerate}
+Escrever um algoritmo recursivo para resolver essa generalização. O seu programa deve ser escrito em C++ e deve imprimir na tela a sequência de movimentos que resolve esse problema para uma entrada $n$, onde $n$ é o número de discos.
+
+
+\end{questions}
+
+
+\end{document}
