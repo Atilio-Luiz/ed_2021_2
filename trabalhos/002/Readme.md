@@ -1,6 +1,6 @@
 # TAD Círculo
 
-![](figura.jpg)
+![](figura.png)
 
 O objetivo desta atividade é implementar um Tipo Abstrato de Dados chamado **Circulo**.
 Um círculo pode ser matematicamente definido apenas em função do seu centro e do seu raio.
