@@ -10,7 +10,7 @@
 class Point {
 private:
     // Atributos da classe Ponto
-	double x; // coordenada do eixo x
+    double x; // coordenada do eixo x
     double y; // coordenada do eixo y
 
 public:
