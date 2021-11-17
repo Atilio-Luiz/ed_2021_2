@@ -12,3 +12,4 @@ Repositório para a disciplina de Estrutura de Dados - Turma 03A - 2021.2 - Enge
     - [Slides da aula](slides/04_TiposAbstratosDeDados.pdf)
     - [Link para os códigos desenvolvidos na aula](s08a01_TAD+POO)
     - **Trabalhos (Entrega: 25/11/2021)**
+        - [TAD Círculo](trabalhos/002)
