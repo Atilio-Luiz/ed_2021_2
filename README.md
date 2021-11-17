@@ -5,10 +5,10 @@ Repositório para a disciplina de Estrutura de Dados - Turma 03A - 2021.2 - Enge
 
 **Aulas**
 
-- **Aula 17/11/2021 --- TAD e Programação Orientada a Objetos**
-    - [Slides da aula](slides/04_TiposAbstratosDeDados.pdf)
+- **Aula 17/11/2021 - TAD e Programação Orientada a Objetos**
     - [Link da aula (Parte 1)]() Revisão de TAD usando programação estruturada
     - [Link da aula (Parte 2)](https://drive.google.com/file/d/1zG6UWcAh3dke4xMW6lcPYvbsDQa7gDLM/view?usp=sharing) Introdução à Programação Orientada a Objetos
     - [Link da aula (Parte 3)]() Implementando um TAD como uma Classe
+    - [Slides da aula](slides/04_TiposAbstratosDeDados.pdf)
+    - [Link para os códigos desenvolvidos na aula](s08a01_TAD+POO)
     - **Trabalhos (Entrega: 25/11/2021)**
-        - 
