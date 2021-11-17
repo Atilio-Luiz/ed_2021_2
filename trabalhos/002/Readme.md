@@ -74,6 +74,6 @@ $end
 
 ## Esqueleto
 
-Acima desta atividade, você encontra uma pasta chamada **projeto** contendo um esqueleto da atividade. A pasta **projeto** contém três arquivos: *main.cpp*, *Point.h* e *Circle.cpp*. Não mexa no arquivo main.cpp pois ele já está pronto para uso. O único arquivo que você deve completar nesta atividade é o arquivo Circle.h
+Acima desta atividade, você encontra uma pasta chamada **projeto** contendo um esqueleto da atividade. A pasta **projeto** contém três arquivos: *main.cpp*, *Point.h* e *Circle.h*. Não mexa no arquivo main.cpp pois ele já está pronto para uso. O único arquivo que você deve completar nesta atividade é o arquivo Circle.h
 
 
