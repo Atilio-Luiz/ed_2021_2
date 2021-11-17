@@ -7,11 +7,11 @@ Um círculo pode ser matematicamente definido apenas em função do seu centro e
 Portanto, uma abstração de um círculo necessita apenas destes dois dados.
 
 ## Requisitos
-- Implemente em C++ um TAD chamado **Circulo** usando Programação Orientada a Objetos.
-- A classe `Circulo` deve ter apenas dois *atributos*:
+- Implemente em C++ um TAD chamado **Cirle** (*Círculo* em inglês) usando Programação Orientada a Objetos.
+- A classe `Circle` deve ter apenas dois *atributos*:
     - o raio
     - o centro (que deve ser um objeto da classe Ponto, que está em anexo a esta atividade)
-- A classe `Circulo` deve ter as seguintes *funções-membro*:
+- A classe `Circle` deve ter as seguintes *funções-membro*:
     - `Circle()` : o construtor *default* da classe
     - `Circle(Point& center, double radius)` : um construtor com dois argumentos
     - `Point getCenter()` : retorna o ponto no centro do círculo
