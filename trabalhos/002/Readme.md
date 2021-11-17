@@ -2,12 +2,12 @@
 
 ![](figura.png)
 
-O objetivo desta atividade é implementar um Tipo Abstrato de Dados chamado **Circulo**.
+O objetivo desta atividade é implementar um Tipo Abstrato de Dados chamado **Circle** (*Círculo* em inglês).
 Um círculo pode ser matematicamente definido apenas em função do seu centro e do seu raio.
 Portanto, uma abstração de um círculo necessita apenas destes dois dados.
 
 ## Requisitos
-- Implemente em C++ um TAD chamado **Cirle** (*Círculo* em inglês) usando Programação Orientada a Objetos.
+- Implemente em C++ um TAD chamado **Circle** (*Círculo* em inglês) usando Programação Orientada a Objetos.
 - A classe `Circle` deve ter apenas dois *atributos*:
     - o raio
     - o centro (que deve ser um objeto da classe Ponto, que está em anexo a esta atividade)
