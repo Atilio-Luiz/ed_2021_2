@@ -13,3 +13,4 @@ Repositório para a disciplina de Estrutura de Dados - Turma 03A - 2021.2 - Enge
     - [Link para os códigos desenvolvidos na aula](s08a01_TAD+POO)
     - **Trabalhos (Entrega: 25/11/2021)**
         - [TAD Círculo](trabalhos/002)
+        - [TAD Matriz](trabalhos/003)
