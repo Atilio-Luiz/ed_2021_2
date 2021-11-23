@@ -16,7 +16,7 @@
 #__case create
 $init 3
 $status
-size:0 capacity:3
+capacity:3
 $end
 
 #__case add
