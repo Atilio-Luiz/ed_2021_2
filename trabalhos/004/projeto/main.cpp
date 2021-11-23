@@ -23,7 +23,7 @@ public:
     //vec = Array(6);
     //nesse ponto, os atributos de this já foram inicializados, 
     //mas você precisa alterá-los para copiar os valores de other
-    void operator=(const Array& other) {
+    void operator=(Array& other) {
         //inicialize this->capacity com other.capacity
         //se this->ptr não for nulo, devolva a memória com delete[]
         //crie nova memória para this->ptr do tamanho de other.capacity

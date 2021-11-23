@@ -51,8 +51,8 @@ using namespace std;
 
 class Array {
 private:
-    int capacity; //capacidade total do Array
-    int *ptr;     //ponteiro para o array de inteiros
+    int capacity {0};    //capacidade total do Array
+    int *ptr {nullptr};  //ponteiro para o array de inteiros
 
 public:
     Array(int capacity) {
@@ -71,6 +71,8 @@ public:
     //nesse ponto, os atributos de this já foram inicializados, 
     //mas você precisa alterá-los para copiar os valores de other
     void operator=(const Array& other) {
+        //primeiro checa se other e this não são os mesmos Arrays, 
+        // caso eles não sejam, executar as operações abaixo:
         //inicialize this->capacity com other.capacity
         //se this->ptr não for nulo, devolva a memória com delete[]
         //crie nova memória para this->ptr do tamanho de other.capacity
@@ -81,7 +83,7 @@ public:
     //Exemplo: 
     //Array v(4);
     //Array v2(v);
-    Array(Array& other){
+    Array(const Array& other){
         //aqui você não precisa fazer nada, basta utilizar 
         // o operador de atribuição que você já implementou
         *this = other;
@@ -100,12 +102,12 @@ public:
     //esse é o operador de igualdade sobrecarregado
     //essa função determina se os dois Arrays são iguais e devolve true,
     //caso contrário devolve false
-    bool operator==(Array& other) {
+    bool operator==(const Array& other) {
         // checa se this->capacity é diferente de other.capacity
         // checa se this->ptr tem os mesmos elementos que other.ptr
     }
 
-    bool operator!=(Array& other) {
+    bool operator!=(const Array& other) {
         //aqui você não precisa fazer nada, basta utilizar 
         // o operador de igualdade que você já implementou logo acima
         return !(*this == other); // invoca operator==
@@ -114,7 +116,7 @@ public:
     //Esse é o toString do C++
     //tudo que enviar para out, é como se estivesse enviando 
     // para saída padrão basta entender o funcionamento
-    friend ostream& operator<<(ostream &out, Array& array){
+    friend ostream& operator<<(ostream &out, const Array& array){
         out << "[ ";
         for(int i = 0; i < array.capacity; ++i)
             out << array.ptr[i] << " ";
