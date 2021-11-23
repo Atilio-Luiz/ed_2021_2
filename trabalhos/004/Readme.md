@@ -19,25 +19,17 @@ $status
 capacity:3
 $end
 
-#__case add
+#__case insert v index
+# insere o valor 'v' na posição index do Array
 $init 5
 $show
-[ ]
+[ 0 0 0 0 0 ]
 $insert 3 0
 $insert 4 1
 $insert 5 2
 $insert 1 3
 $show
-[ 3 4 5 1 ]
-
-#__case tentar estourar
-$insert 7 0
-$insert 3 1
-$insert 2 2
-$insert 1 3
-$show
-[ 3 4 5 1 7 ]
-$end
+[ 3 4 5 1 0 ]
 ```
 
 ---
