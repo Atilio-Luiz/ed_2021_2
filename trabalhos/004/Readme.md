@@ -43,8 +43,14 @@ $end
 ---
 
 ## Esqueleto
-<!--FILTER main.cpp c++-->
-```c++
+
+Logo acima, na descrição da questão, há uma pasta **projeto** com os 
+códigos-fonte iniciais para a solução desta atividade. Baixe os arquivos
+no seu computador e complete a implementação da classe **Array**. Logo
+abaixo, reproduzo parte do código do projeto.
+
+<!--FILTER main.cpp cpp-->
+```cpp
 #include <iostream>
 #include <sstream>
 using namespace std;
