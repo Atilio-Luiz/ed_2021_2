@@ -31,17 +31,14 @@ No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 
     - toda vez que alguém morrer, marque no vetor
     - procure pelo próximo elemento vivo
 
+```c++
 int elementos[size];
-
 bool vivos[size];
-
 //matar equivale a fazer
-
 vivos[pos] = false;
-
 //o próximo vivo seria uma busca pelo próximo vivo depois de pos
-
 int prox = procurar_vivo(elementos, vivos, size, pos);
+```
 
 ## Abordagem II
 
