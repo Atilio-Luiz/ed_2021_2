@@ -45,12 +45,14 @@ int prox = procurar_vivo(elementos, vivos, size, pos);
 - retirando os elementos que morrem e diminuindo o tamanho do vetor.
     - reposicione os elementos “puxando” todos os que estiverem à frente
 
+```c++
 //faça a funcao matar que remove o elemento do vetor
 //perceba que TUDO após *pos*, vai diminuir em 1
 int elementos[size];
 matar(elementos, size, pos);
 size -= 1;
 pos = pos % size; //se ele era o último agora é o zero
+```
 
 ---
 
