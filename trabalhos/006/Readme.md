@@ -14,7 +14,7 @@ Por exemplo, dada **entrada = [‘ab’,‘ab’,‘abc’ ]** e **consultas = [
 
 ## Descrição da função
 
-Complete a função **matchingStrings**. A função deve retornar um vetor de números inteiros representando a frequência de ocorrência de cada sequência de consultas em sequências .
+Implemente a função **matchingStrings**. A função deve retornar um vetor de números inteiros representando a frequência de ocorrência de cada sequência de consultas em sequências .
 
 *matchingStrings* possui os seguintes parâmetros:
 
@@ -38,8 +38,9 @@ Retorne um vetor inteiro dos resultados de todas as consultas em ordem.
 
 ---
 
-## Entradas de amostra
+## Entradas e Saídas de amostra
 
+```
 >>>>>>>> 01
 4 
 aba baba aba xzxb 
@@ -128,3 +129,4 @@ wqtmc vpje ia vn kajln dwe zi
 ========
 0 0 0 0 0 0 0
 <<<<<<<<
+```
