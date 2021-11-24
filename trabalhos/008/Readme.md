@@ -50,10 +50,7 @@ Seu programa deve imprimir uma linha contedo *N-M* inteiros com os identificador
 817 364 524 565 132 499 412 563 297 638 
 7
 364 817 412 132 499 524 297
-========
-565 563 638 
-
->>>>>>>> 04
+========136 650 622 281
 9
 2 840 316 408 711 537 296 565 735 
 5
