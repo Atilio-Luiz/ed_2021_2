@@ -8,11 +8,11 @@ Um problema bem interessante e antigo da matemática é conhecido como Josephus 
 
 Nosso objetivo aqui será apenas implementar seu funcionamento.
 
---
+---
 
 No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 até **N**. Um número **E** é escolhido para iniciar o jogo. **E** pega a espada, mata o elemento à sua frente e passa a espada uma posição à frente. O jogo continua até que um único elemento permaneça vivo.
 
---
+---
 
 - Entrada
     - Os valores de **N** e **E** na primeira linha.
