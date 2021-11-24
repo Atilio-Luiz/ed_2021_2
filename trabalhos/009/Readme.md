@@ -1,7 +1,8 @@
 # Princesa - Implementação em vetor
 
-![](figura.jpg)[https://www.youtube.com/watch?v=uCsD3ZGzMgE]
+![](figura.jpg)
 
+https://www.youtube.com/watch?v=uCsD3ZGzMgE
 ---
 
 Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.
