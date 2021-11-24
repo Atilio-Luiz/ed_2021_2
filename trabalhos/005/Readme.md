@@ -6,7 +6,11 @@
 
 ## Objetivo
 
-- Implemente as seguintes funções do vetor dinâmico. 
+- Implemente as seguintes funções do vetor dinâmico:
+    - `Vector * vector_create(int capacity)`: cria um vetor de inteiros com alocação dinâmica.
+    - `void vector_destroy(Vector * vector)`: libera memória que foi alocada para o vetor.
+    - `void vector_add(Vector * vector, int value)`: adiciona um inteiro ao vetor.
+    - `string vector_show(Vector * vector)`: exibe o conteúdo do vetor. 
 - Ele deve ser iniciado utilizando alocação dinâmica e conter, além do vetor de dados, os atributos *size* e *capacity* que definem o tamanho atual e a capacidade do vetor.
 
 ---
