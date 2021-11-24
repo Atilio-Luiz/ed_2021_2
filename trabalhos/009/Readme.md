@@ -22,9 +22,9 @@ No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 
 
 ---
 
-### Implementação usando vetor
+## Implementação usando vetor
 
-## Abordagem I
+### Abordagem I
 
 - marcando os elementos que morrem
     - crie um vetor auxiliar de bool
@@ -40,7 +40,7 @@ vivos[pos] = false;
 int prox = procurar_vivo(elementos, vivos, size, pos);
 ```
 
-## Abordagem II
+### Abordagem II
 
 - retirando os elementos que morrem e diminuindo o tamanho do vetor.
     - reposicione os elementos “puxando” todos os que estiverem à frente
@@ -56,7 +56,7 @@ pos = pos % size; //se ele era o último agora é o zero
 
 ---
 
-### Comparação
+## Comparação
 
 - Qual dos algoritmos você acha que é mais eficiente?
 - Implemente os dois e vá aumentando a instância do problema e veja o resultado.
