@@ -4,8 +4,8 @@
 
 class Fraction {
 private:
-    int numerator;
-    int denominator;
+    int numerator;      // numerador da fração
+    int denominator;    // denominador da fração
 
 public:
     /**
@@ -28,7 +28,7 @@ public:
      * Função recursiva que calcula o máximo divisor comum 
      * de dois inteiros a e b passados como argumento.
      */
-    int gcd(int a, int b) {
+    int gcd(int a, int b) const {
         return (b == 0) ? std::abs(a) : gcd(b, a % b);
     }
 
@@ -43,12 +43,24 @@ public:
     }
 
     // getters
-    int getNumerator() const { return numerator; }
-    int getDenominator() const { return denominator; }
+    int getNumerator() const { 
+        return numerator; 
+    }
+
+    int getDenominator() const { 
+        return denominator; 
+    }
 
     // setters
-    void setNumerator(int num) { numerator = num; }
-    void setDenominator(int den) { denominator = den; }
+    void setNumerator(int num) { 
+        numerator = num; 
+        reduce();
+    }
+
+    void setDenominator(int den) { 
+        denominator = den; 
+        reduce();
+    }
 
     // operadores aritméticos sobrecarregados como funções-membro
     Fraction operator+(const Fraction& f) const;
