@@ -91,8 +91,7 @@ struct Vector {
 };
 
 Vector * vector_create(int capacity) {
-    //crie um vetor dinâmicamente
-    //cria a struct
+    //crie o struct vector dinâmicamente
     //crie o vetor data
     //inicialize size e capacity
 }
