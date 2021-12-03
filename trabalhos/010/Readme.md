@@ -16,10 +16,10 @@ A implementação de listas lineares por meio de vetores tem como vantagem a eco
 
 Uma caracterı́stica limitante da estrutura de dados **SeqList** é que a capacidade total da lista é fixa (não muda) uma vez que ela foi criada. 
 
-- Com o intuito de eliminar essa limitação, reimplemente a estrutura de dados **SeqList** vista em aula para sempre permitir a inserção de novos itens na lista. Para isso é preciso modificar as operações de inserção `push_back(int elemento)` e `insert(int elemento, int i)` da seguinte forma: toda vez que a inserção de um novo item esgotar a memória disponı́vel no vetor, uma nova área de memória com capacidade maior deve ser alocada e o conteúdo do vetor anterior deve ser copiado para ela. 
+- Com o intuito de eliminar essa limitação, reimplemente a estrutura de dados **SeqList** vista em aula para sempre permitir a inserção de novos itens na lista. Para isso é preciso modificar a operação de inserção `push_back(int elemento)` da seguinte forma: toda vez que a inserção de um novo item esgotar a memória disponı́vel no vetor, uma nova área de memória com capacidade maior deve ser alocada e o conteúdo do vetor anterior deve ser copiado para ela. 
     - Uma ideia para essa implementação é: toda vez que a lista ficar cheia, criar um novo array de inteiros com o dobro da capacidade do array antigo e, então, copiar todos os dados do array antigo para o array novo. Não esquecendo claro de liberar a memória que foi alocada para o array antigo (sempre certifique-se de que não haja vazamento de memória na sua estrutura de dados e no seu programa como um todo).
 
-- Após sucessivas operações de retirada `remove(int i)`, `remove_back()`, a razão do número de itens no vetor pela sua capacidade pode se tornar muito pequena. Nesse caso, uma operação para diminuir a quantidade de memória total utilizada pelo vetor também deve ser implementada.
+- Após sucessivas operações de retirada `remove_back()`, a razão do número de itens no vetor pela sua capacidade pode se tornar muito pequena. Nesse caso, uma operação para diminuir a quantidade de memória total utilizada pelo vetor também deve ser implementada.
     - Ideia: a fim de diminuir a capacidade do array, uma operação inversa a operação descrita no caso anterior pode ser executada aqui. Certifique-se de liberar a memória do array antigo.
 
 
