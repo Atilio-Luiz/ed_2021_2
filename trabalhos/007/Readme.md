@@ -55,6 +55,12 @@ Implemente a operação de rotação. Observe que calculando as posições finai
 
 ## Código Base
 
+Logo abaixo, mostro um código base usando como estrutura de dado base o vector do c++.
+Alguns links sobre vector: 
+- https://www.geeksforgeeks.org/vector-in-cpp-stl/
+- https://www.cplusplus.com/reference/vector/vector/
+
+
 <!--FILTER main.cpp C++-->
 ```C++
 #include <iostream>
