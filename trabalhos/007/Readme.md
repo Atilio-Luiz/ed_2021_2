@@ -76,9 +76,11 @@ int main(){
     int size, nrot;
     cin >> size >> nrot;
     SeqList vet(size);
-    for(int i = 0; i < size; i++)
-        cin >> vet[i];
-    
+    for(int i = 0; i < size; i++) {
+        int valor;
+        cin >> valor;
+        vet.push_back(valor);
+    }
     right_rotation(vet, nrot);
     show(vet);
 }
