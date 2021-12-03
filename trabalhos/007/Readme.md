@@ -67,8 +67,8 @@ void right_rotation(SeqList& vet, int nrot){
 
 void show(SeqList &vet) {
     cout << "[ ";
-    for(int value : vet)
-        cout << value << " ";
+    for(int i = 0; i < vet.size(); i++)
+        cout << vet[i] << " ";
     cout << "]\n";
 }
 
