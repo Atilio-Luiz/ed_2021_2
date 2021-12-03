@@ -58,29 +58,27 @@ Implemente a operação de rotação. Observe que calculando as posições finai
 <!--FILTER main.cpp C++-->
 ```C++
 #include <iostream>
-#include "SeqList.h" // Usando a estrutura de dados SeqList vista em aula
+#include <vector>
 using namespace std;
 
-void right_rotation(SeqList& vet, int nrot){
+void right_rotation(vector<int>& vet, int nrot){
 
 }
 
-void show(SeqList &vet) {
+void show(vector<int> &vet) {
     cout << "[ ";
-    for(int i = 0; i < vet.size(); i++)
-        cout << vet[i] << " ";
+    for(int value : vet)
+        cout << value << " ";
     cout << "]\n";
 }
 
 int main(){
     int size, nrot;
     cin >> size >> nrot;
-    SeqList vet(size);
-    for(int i = 0; i < size; i++) {
-        int valor;
-        cin >> valor;
-        vet.push_back(valor);
-    }
+    vector<int> vet(size);
+    for(int i = 0; i < size; i++)
+        cin >> vet[i];
+    
     right_rotation(vet, nrot);
     show(vet);
 }
